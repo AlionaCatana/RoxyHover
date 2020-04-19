@@ -1,0 +1,62 @@
+body{
+    background-color: #2f3238;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.roxy{
+width: 500px;
+height: 400px;
+background-image: url(1.jpg);
+background-position: right;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+transition: 1s;
+}
+.roxy:hover{
+    background-image: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(1.jpg);
+    background-position: center;
+}
+.roxy:hover #square{
+    border: 2px solid white;
+    /* box-shadow: 0 0 12px black;
+    box-shadow: inset 0 0 10px black; */
+    transform: translateX(20px);
+}
+.roxy:hover #text{
+    display: block;
+}
+#square{
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: 1s;
+}
+#Charm{
+    position: absolute;
+    top: 125px;
+    padding: 45px;
+    font-size: 30px;
+    text-shadow: 0 0 10px black;
+}
+#text{
+    position: relative;
+    padding: 25px;
+    top: 175px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+    display: none;
+    transition: 1s;
+}
+p, h1 {
+    padding: 0;
+    margin: 0;
+}
